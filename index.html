@@ -27,7 +27,7 @@
         function newTweet() {
           for (var i = 0; i < streams.home.length; i++) { 
             //var createdDate = tweet.created_at;
-            var days = todayDate.getDate() - createdDate.getDate();
+            //var days = todayDate.getDate() - createdDate.getDate();
             var tweet = streams.home[i];  
             var $tweet = $('<div></div>');
             $tweet.text(`@ ${tweet.user}: ${tweet.message} ${tweet.created_at}`);
