@@ -26,5 +26,12 @@ img {
 }
 
 ul {
-    margin: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.tweet {
+    background-color: white;
+    padding: 10px;
+    border: 5px #09BFFF;
 }
