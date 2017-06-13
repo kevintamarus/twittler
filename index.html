@@ -14,37 +14,34 @@
 
     </div>
     <ul id="list">
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
-      <li>Tweets</li>
+      <div class = "tweet"></div>
     </ul>
     <script>
 //output => 1) show the new tweets, display timestamp when tweet was created
 //          2) make link on username for user to click -> it will show username tweets in reverse choronological order
-/*
+
       $(document).ready(function(){
         var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
+        var streamsHomeIndex = 0; 
+        var todayDate = new Date();
+        function newTweet() {
+          for (var i = 0; i < streams.home.length; i++) { 
+            //var createdDate = tweet.created_at;
+            var days = todayDate.getDate() - createdDate.getDate();
+            var tweet = streams.home[i];  
+            var $tweet = $('<div></div>');
+            $tweet.text(`@ ${tweet.user}: ${tweet.message} ${tweet.created_at}`);
+            $tweet.appendTo("div.tweet");
+            streamsHomeIndex = streamsHomeIndex + 1;
+          }
         }
-
+        var updateTweets = function(){
+          setTimeout(newTweet(), 10000);//10 seconds
+          newTweet();
+        };
+        updateTweets();
       });
-
+//How to refresh tweets with 10 second delay
     </script>
   </body>
 </html>
