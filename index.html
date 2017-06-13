@@ -3,10 +3,34 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <title>Twittler Mirror</title>
+    <style>
+      header {
+        background: #00BFFF;
+        color: #191970;
+        margin: 10px;
+        padding: 10px;
+      }
+      body{
+        font-family: Verdana;
+        font-size: 20px;
+        background: DodgerBlue;
+        vertical-align: auto;
+      }
+    </style>
   </head>
   <body>
-    <script>
+    <header>
+      <h1>Tweets</h1>
+    </header>
+    <div id="container">
 
+    </div>
+    <script>
+//output => 1) show the new tweets, display timestamp when tweet was created
+//          2) make link on username for user to click -> it will show username tweets in reverse choronological order
+
+//
       $(document).ready(function(){
         var $body = $('body');
         $body.html('');
