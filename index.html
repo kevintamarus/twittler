@@ -3,25 +3,39 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
-    <title>Twittler Mirror</title>
+    <title>Twittler Posts</title>
     <style>
       header {
-        background: #00BFFF;
+        background: DodgerBlue;
         color: #191970;
         margin: 10px;
+        margin-left: 300px;
+        margin-right: 300px;
         padding: 10px;
+        font-family: 'Times New Roman';
+        text-align: center; 
       }
       body{
         font-family: Verdana;
         font-size: 20px;
-        background: DodgerBlue;
+        background: #00BFFF;
         vertical-align: auto;
+      }
+      script{
+        margin-top: 20px;
+        padding: 20px;
+      }
+      img {
+        position: absolute;
+        top:0; right:0; bottom:0; left:0; 
+        margin: auto;
       }
     </style>
   </head>
   <body>
+    <img src="http://static.rappler.com/images/fake-twitter.jpg">
     <header>
-      <h1>Tweets</h1>
+      <h1>TWITTLER LOOK-ALIKE</h1>
     </header>
     <div id="container">
 
@@ -30,7 +44,7 @@
 //output => 1) show the new tweets, display timestamp when tweet was created
 //          2) make link on username for user to click -> it will show username tweets in reverse choronological order
 
-//
+/*
       $(document).ready(function(){
         var $body = $('body');
         $body.html('');
