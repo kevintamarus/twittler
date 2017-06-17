@@ -28,9 +28,28 @@ header {
 }
 
 body{
+    background-attachment: fixed;
     font-family: Verdana;
     font-size: 20px;
     vertical-align: auto;
+}
+
+nav{
+    font-family: serif;
+    font-size: 190%;
+    margin: auto;
+    margin-left: 130px;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+
+}
+.users {
+    background-color: #87CEFA;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
 }
 
 script{
@@ -50,10 +69,13 @@ ul {
 }
 
 .tweet {
-    background-color: white;
+    background-color: #87CEEB;
     padding: 10px;
-    border: 5px #09BFFF;
+    border: 5px;
+    text-align: center;
 }
 div {
     background-color: #B9EBFF;
+    border-style: solid;
+    border-color: white;
 }

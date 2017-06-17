@@ -14,11 +14,11 @@
           e.style.display = 'block';
       }
     </script>
-    <title>Hack Reactor Twittler Posts</title>
+    <title>@douglascalhoun Tweets</title>
   </head>
   <body background = "fake-twitter.jpeg">
     <header>
-      <h1>HACK REACTOR Tweets</h1>
+      <h1>@douglascalhoun Tweets</h1>
       <img src="hackreactor.png" class="imgLeft" height="140" width="140"/>
       <img src="hackreactor.png" class="imgRight" height="140" width="140"/>
     </header>
@@ -29,14 +29,6 @@
       <a href="http://www.hackreactor.com">Hack Reactor</a>
       <a href="https://www.github.com/kevintamarus">Kevin Tamarus</a>
     </nav>
-    <p class="users">Twittler accounts you're currently following:
-      <ul class="users">
-        <a href="douglascalhoun.html">@douglascalhoun</a>
-        <a href="mracus.html">@mracus</a>
-        <a href="sharksforcheap.html">@sharksforcheap</a>
-        <a href="shawndrost.html">@shawndrost</a>
-      </ul>
-    </p>
     <div id="container">
     </div>
     <ul id="list">
@@ -73,8 +65,8 @@
 
         var index = 0; 
         function newTweet() {
-          for (var i = 0; i < streams.home.length; i++) { 
-            var tweet = streams.home[i];  
+          for (var i = 0; i < streams.users.douglascalhoun.length; i++) { 
+            var tweet = streams.users.douglascalhoun[i];  
             var $tweet = $('<div></div>');
             var createdDate = tweet.created_at;
             $tweet.text(`@ ${tweet.user}: ${tweet.message} | ${createdDate} | ${timeSince(createdDate)} ago`);
