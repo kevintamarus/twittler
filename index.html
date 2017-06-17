@@ -6,12 +6,13 @@
     <script src="data_generator.js"></script>
     <title>Twittler Posts</title>
   </head>
-  <body background = "http://static.rappler.com/images/fake-twitter.jpg">
+  <body background = "fake-twitter.jpeg">
     <header>
       <h1>HACK REACTOR Tweets</h1>
-      <img src="hackreactor.png" class="imgleft" height="140" width ="140"/>
-      <img src="hackreactor.png" class="imgright" height="140" width ="140"/>
+      <img src="hackreactor.png" class="imgLeft" height="140" width="140"/>
+      <img src="hackreactor.png" class="imgRight" height="140" width="140"/>
     </header>
+    <input type="button" class="refreshButton" value="Click Here to Update Tweets" onClick="window.location.reload()">
     <div id="container">
 
     </div>
@@ -25,7 +26,7 @@
       $(document).ready(function(){
         var $body = $('body');
         var streamsHomeIndex = 0; 
-        var todayDate = new Date();
+        //var todayDate = new Date();
         function newTweet() {
           for (var i = 0; i < streams.home.length; i++) { 
             //var createdDate = tweet.created_at;
