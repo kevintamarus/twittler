@@ -1,11 +1,21 @@
 header {
-    background: #00BFFF;
-    margin: 10px;
-    margin-left: 300px;
-    margin-right: 300px;
+    background: #87CEEB;
+    margin-left: 240px;
+    margin-right: 200px;
     padding: 10px;
-    font-family: 'Times New Roman';
+    font-family: 'Helvetica Neue';
+    color: white;
     text-align: center; 
+}
+
+.imgleft {
+    margin-top: 0px;
+    margin-left:240px;
+}
+
+.imgright {
+    margin-top: 0px;
+    margin-right:200px;
 }
 
 body{
@@ -34,4 +44,7 @@ ul {
     background-color: white;
     padding: 10px;
     border: 5px #09BFFF;
+}
+div {
+    background-color: #B9EBFF;
 }

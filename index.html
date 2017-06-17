@@ -8,7 +8,9 @@
   </head>
   <body background = "http://static.rappler.com/images/fake-twitter.jpg">
     <header>
-      <h1>TWITTLER LOOK-ALIKE</h1>
+      <h1>HACK REACTOR Tweets</h1>
+      <img src="hackreactor.png" class="imgleft" height="140" width ="140"/>
+      <img src="hackreactor.png" class="imgright" height="140" width ="140"/>
     </header>
     <div id="container">
 
@@ -36,7 +38,7 @@
           }
         }
         var updateTweets = function(){
-          setTimeout(newTweet(), 10000);//10 seconds
+          setTimeout(newTweet(), 1500);//10 seconds
           newTweet();
         };
         updateTweets();
