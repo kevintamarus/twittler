@@ -77,7 +77,7 @@
             var tweet = streams.home[i];  
             var $tweet = $('<div></div>');
             var createdDate = tweet.created_at;
-            $tweet.text(`@ ${tweet.user}: ${tweet.message} | ${createdDate} | ${timeSince(createdDate)} ago`);
+            $tweet.text(`@${tweet.user}: ${tweet.message} | ${createdDate} | ${timeSince(createdDate)} ago`);
             $tweet.appendTo(".tweet");
             index = index + 1;
           }
